@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --background-clr: white;
+    --text-clr: black;
+    --hover-clr: #0088a9;
+    --hover-bkd: aliceblue;
+    --active-clr: black;
+    --active-text: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    color: var(--text-clr);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.topnav li {
+    list-style: none;
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.topnav li a:hover {
+    color: var(--hover-clr);
+    background-color: var(--hover-bkd);
+    padding: 5px;
+    border-radius: 10px;
+
+}
+
+.topnav li a {
+    transition: all 0.3s ease 0s;
+}
+
+.active {
+    background-color: var(--active-clr);
+    color: var(--active-text);
+    padding: 5px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.public-id {
+    margin-top: 25vh;
+}
+
+.personal-id h1 {
+    margin-top: 2%;
+    text-align: center;
+}
+
+.prof-id {
+    margin: auto;
+    display: flex;
+    height: auto;
+    width: auto;
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 50%;
+}
+
+.topics {
+    margin-top: 2%;
+    text-align: center;
+}
+
+.topics li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 2%;
+    font-weight: 600;
+    background-color: var(--active-clr);
+    color: var(--active-text);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.socials {
+    margin-top: 2%;
+    text-align: center;
+}
+
+.socials li{
+    list-style: none;
+    display: inline-block;
+    padding: 0 2%;
+}
+
+.socials {
+    color: var(--text-clr);
+}
+
+.socials i {
+    transition: all 0.3s ease 0s;
+}
+
+.socials i:hover {
+    color: var(--hover-clr);
+    background-color: var(--hover-bkd);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.t-statement {
+    margin: auto;
+    margin-top: 8vh;
+    margin-bottom: 5vh;
+    width: 70vh;
+    line-height: 1.5em;
+    font-size: 24px;
+    max-width: 80%;
+}
+
+.t-statement h1 {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.a-statement {
+    margin: auto;
+    margin-top: 8vh;
+    margin-bottom: 5vh;
+    width: 70vh;
+    line-height: 1.5em;
+    font-size: 24px;
+}
+
+.a-statement h1 {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.v-frame {
+    margin: auto;
+    text-align: center;
+    margin-top: 2%;
+}
+
+.v-frame h1 {
+    margin-bottom: 25px;
+}
+
+.c-v {
+    width: 70vh;
+    height: 75vh;
+    border-radius: 15px;
+}
+
+.cv-download {
+    text-align: center;
+    margin-top: 2%;
+    padding: 10px;
+}
+
+.cv-download button {
+    background-color: var(--active-clr);
+    color: var(--active-text);
+    text-decoration: none;
+    padding: 15px;
+    border-style: none;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.cv-download button:hover {
+    background-color: var(--hover-bkd);
+    color: var(--hover-clr);
+    cursor: pointer;
+}
