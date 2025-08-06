@@ -80,7 +80,6 @@ header {
     padding: 0 2%;
     font-weight: 600;
     background-color: var(--active-clr);
-    color: var(--active-text);
     padding: 5px;
     border-radius: 10px;
 }
