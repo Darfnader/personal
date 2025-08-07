@@ -66,20 +66,10 @@ header {
 }
 
 @media (max-width: 768px) {
-    .hamburger {
-        display: block;
-    }
 
-    .topnav {
-        position: fixed;
-        left: -100%;
-        top: 70px;
-        gap: 0;
-        flex-direction: column;
-        background-color: var(--background-clr);
-        width: 100%;
+    .topnav li {
+        display: block;
         text-align: center;
-        transition: 0.3s;
     }
 
     .topnav li {
@@ -89,7 +79,12 @@ header {
 }
 
 .public-id {
-    margin-top: 25vh;
+    margin-top: 15vh;
+}
+
+@media (max-width: 768px) {
+    .public-id { margin-top: 10vh;
+    }
 }
 
 .personal-id h1 {
@@ -115,9 +110,8 @@ header {
 .topics li {
     list-style: none;
     display: inline-block;
-    padding: 0 2%;
     font-weight: 600;
-    padding: 5px;
+    padding: 2px;
     border-radius: 10px;
 }
 
@@ -165,6 +159,12 @@ header {
     border-radius: 10px;
 }
 
+@media (max-width: 768px) {
+    .socials {
+        margin-top: 10%;
+    }
+}
+
 .t-statement {
     margin: auto;
     margin-top: 8vh;
@@ -178,6 +178,12 @@ header {
 .t-statement h1 {
     margin-bottom: 25px;
     text-align: center;
+}
+
+@media (max-width: 768px) {
+    .t-statement h1{
+        line-height: 1.1em;
+    };
 }
 
 .a-statement {
