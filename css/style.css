@@ -7,6 +7,7 @@
     --hover-bkd: aliceblue;
     --active-clr: black;
     --active-text: white;
+    --box-shadow: rgb(79, 79, 79);
 }
 
 * {
@@ -33,10 +34,54 @@ header {
 .topnav li a:hover {
     color: var(--hover-clr);
     background-color: var(--hover-bkd);
-    padding: 5px;
     border-radius: 10px;
+}
+
+.drpbtn {
+    background-color: var(--background-clr);
+    color: var(--text-clr);
+    border: none;
+    font-family: "Inter", sans-serif;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.3s ease 0s;
 
 }
+
+.drpbtn:hover {
+    color: var(--hover-clr);
+    background-color: var(--hover-bkd);
+    border-radius: 10px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--background-clr);
+    min-width: 200px;
+    box-shadow: 0px 4px 8px 0px var(--box-shadow);
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.dropdown-content a {
+    color: var(--text-clr);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover {
+    .dropdown-content {
+        display: block;
+    }
+}
+
 
 .topnav li a {
     transition: all 0.3s ease 0s;
@@ -155,7 +200,6 @@ header {
 .socials i:hover {
     color: var(--hover-clr);
     background-color: var(--hover-bkd);
-    padding: 5px;
     border-radius: 10px;
 }
 
@@ -213,6 +257,55 @@ header {
     .c-v {
         display: none;
     }
+}
+
+.t-materials {
+    margin: auto;
+    margin-top: 8vh;
+    margin-bottom: 5vh;
+    max-width: 50rem;
+    min-width: 40vw;
+    line-height: 1.5em;
+    font-size: 24px;
+}
+
+.t-materials h1 {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .t-materials h1{
+        line-height: 1.1em;
+    };
+}
+
+.ex-syll {
+    width: 70vw;
+    height: 75vh;
+    border-radius: 15px;
+}
+
+.syll-dl {
+    text-align: center;
+    margin-top: 2%;
+    padding: 10px;
+}
+
+.syll-dl button {
+    background-color: var(--active-clr);
+    color: var(--active-text);
+    text-decoration: none;
+    padding: 15px;
+    border-style: none;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.syll-dl button:hover {
+    background-color: var(--hover-bkd);
+    color: var(--hover-clr);
+    cursor: pointer;
 }
 
 .v-frame {
