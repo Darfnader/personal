@@ -247,14 +247,15 @@ header {
 
 @media (max-width: 800px) {
     .t-statement,
-    .a-statement { 
+    .a-statement,
+    .t-materials { 
         padding-left: 5%;
         padding-right: 5%;
     }
 }
 
 @media (max-width: 600px) {
-    .c-v {
+    .c-v, .ex-syll {
         display: none;
     }
 }
