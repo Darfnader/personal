@@ -348,6 +348,7 @@ header {
 }
 
 footer {
+    display: none;
     padding-top: 5vh;
     padding-bottom: 5vh;
     text-align: center;
