@@ -346,3 +346,10 @@ header {
     color: var(--hover-clr);
     cursor: pointer;
 }
+
+footer {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    margin: auto;
+    text-align: center;
+}
