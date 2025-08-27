@@ -4,6 +4,7 @@
     --background-clr: white;
     --text-clr: black;
     --hover-clr: #0088a9;
+    --hover-lrg: #0398bdc7;
     --hover-bkd: aliceblue;
     --active-clr: black;
     --active-text: white;
@@ -345,4 +346,89 @@ header {
     background-color: var(--hover-bkd);
     color: var(--hover-clr);
     cursor: pointer;
+}
+
+hr {
+    max-width: 60rem;
+    margin: auto;
+    color: var(--active-clr);
+}
+
+.course-mat {
+    border-radius: 10px;
+    padding: 1rem;
+    max-width: 50rem;
+    margin: auto;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0px 4px 8px 0px var(--box-shadow);
+    transition: all 0.3s ease 0s;
+
+}
+
+.crsimg {
+    max-width: 250px;
+    max-height: 250px;
+    border-radius: 10px;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    margin-left: .5rem;
+}
+
+.course-text {
+    margin-left: 5rem;
+    margin-top: .5rem;
+}
+
+.course-text p {
+    margin-top: 1rem;
+}
+
+.course-mat:hover {
+    background-color: var(--hover-lrg);
+    cursor: pointer;
+    box-shadow: 0px 4px 8px 0px var(--hover-clr);
+
+    .course-text h1, p {color: var(--active-text);}
+}
+
+.course-mob {
+    display: none;
+    text-align: center;
+    margin-bottom: 2vh;
+    padding: 10px;
+    background-color: var(--active-clr);
+    border-radius: 15px;
+    width: 40vw;
+    margin: auto;
+    
+}
+
+.course-mob h1 {
+    color: var(--active-text);
+}
+
+.course-mob button {
+    display: none;
+    background-color: var(--active-clr);
+    color: var(--active-text);
+    text-decoration: none;
+    padding: 10px;
+    border-style: none;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+
+
+@media (max-width: 860px) {
+    .course-mat {
+        display: none;
+    }
+
+    .course-mob {
+        display: block;
+    }
 }
