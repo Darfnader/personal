@@ -36,6 +36,7 @@ header {
     color: var(--hover-clr);
     background-color: var(--hover-bkd);
     border-radius: 10px;
+    padding: 5px 10px;
 }
 
 .drpbtn {
@@ -46,6 +47,7 @@ header {
     cursor: pointer;
     font-size: 18px;
     transition: all 0.3s ease 0s;
+    padding: 5px;
 
 }
 
@@ -53,6 +55,7 @@ header {
     color: var(--hover-clr);
     background-color: var(--hover-bkd);
     border-radius: 10px;
+    padding: 5px 10px;
 }
 
 .dropdown {
@@ -86,6 +89,7 @@ header {
 
 .topnav li a {
     transition: all 0.3s ease 0s;
+    padding: 5px;
 }
 
 .active {
@@ -161,6 +165,15 @@ header {
     border-radius: 10px;
 }
 
+/*
+
+.highlight:hover {
+    background-color: var(--hover-lrg);
+    cursor: pointer;
+}
+
+*/
+
 .highlight {
     color: var(--active-text);
     background-color: var(--active-clr);
@@ -196,12 +209,14 @@ header {
 
 .socials i {
     transition: all 0.3s ease 0s;
+    padding: 5px;
 }
 
 .socials i:hover {
     color: var(--hover-clr);
     background-color: var(--hover-bkd);
     border-radius: 10px;
+    padding: 5px 10px;
 }
 
 @media (max-width: 768px) {
