@@ -45,7 +45,7 @@ header {
     border: none;
     font-family: "Inter", sans-serif;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 16px;
     transition: all 0.3s ease 0s;
     padding: 5px;
 
@@ -229,7 +229,7 @@ header {
     margin: auto;
     margin-top: 8vh;
     margin-bottom: 5vh;
-    width: 50rem;
+    width: 60rem;
     line-height: 1.5em;
     font-size: 24px;
     max-width: 80%;
@@ -241,7 +241,7 @@ header {
 }
 
 @media (max-width: 768px) {
-    .t-statement h1{
+    .t-statement h1, .r-statement h1{
         line-height: 1.1em;
     };
 }
@@ -250,8 +250,8 @@ header {
     margin: auto;
     margin-top: 8vh;
     margin-bottom: 5vh;
-    max-width: 50rem;
-    min-width: 40vw;
+    width: 60rem;
+    max-width: 80%;
     line-height: 1.5em;
     font-size: 24px;
 }
@@ -261,10 +261,26 @@ header {
     text-align: center;
 }
 
+.r-statement {
+    margin: auto;
+    margin-top: 8vh;
+    margin-bottom: 5vh;
+    width: 60rem;
+    max-width: 80%;
+    line-height: 1.5em;
+    font-size: 24px;
+}
+
+.r-statement h1 {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
 @media (max-width: 800px) {
     .t-statement,
     .a-statement,
-    .t-materials { 
+    .t-materials,
+    .r-statement { 
         padding-left: 5%;
         padding-right: 5%;
     }
