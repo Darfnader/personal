@@ -394,7 +394,8 @@ hr {
     margin-bottom: 2vh;
     display: flex;
     justify-content: space-around;
-    box-shadow: 0px 4px 8px 0px var(--box-shadow);
+    /*box-shadow: 0px 4px 8px 0px var(--box-shadow);*/
+    border: solid 1px var(--active-clr);
     transition: all 0.3s ease 0s;
 
 }
@@ -403,9 +404,11 @@ hr {
     width: 250px;
     height: auto;
     border-radius: 10px;
+    border: solid 1px var(--active-clr);
     margin-top: .5rem;
     margin-bottom: .5rem;
     margin-left: .5rem;
+    transition: all 0.3s ease 0s;
 }
 
 .course-text {
@@ -418,10 +421,13 @@ hr {
 }
 
 .course-mat:hover {
-    background-color: var(--hover-lrg);
+    background-color: var(--hover-bkd);
     cursor: pointer;
+    border: solid 1px var(--hover-clr);
 
-    .course-text h1, p {color: var(--active-text);}
+
+    .course-text h1, p {color: var(--hover-clr);}
+    .crsimg {width: 260px;}
 }
 
 .course-mob {
